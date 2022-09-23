@@ -21,7 +21,7 @@ lbl_celsius_result = tk.Label(
 def fahrenheit_celsius_convert():
     try:
         lbl_celsius_result['text'] = float(ent_fahrenheit.get())
-        lbl_celsius_result['text'] = round((lbl_celsius_result['text'] -32) * (5/9) , 2)
+        lbl_celsius_result['text'] = round((lbl_celsius_result['text'] - 32) * (5/9) , 2)
     except ValueError:
         if ent_fahrenheit.get() != '':
             lbl_celsius_result['text'] = 'Enter a number!'
